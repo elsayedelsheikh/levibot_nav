@@ -9,12 +9,12 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(nav2_common REQUIRED)
 find_package(navigation2 REQUIRED)
-find_package(launch_ros REQUIRED)
 find_package(slam_toolbox REQUIRED)
 
 ## install directories
 install(DIRECTORY
   launch
+  behavior_tree
   maps
   params
   rviz
