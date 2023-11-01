@@ -12,6 +12,15 @@ find_package(navigation2 REQUIRED)
 find_package(launch_ros REQUIRED)
 find_package(slam_toolbox REQUIRED)
 
+## install directories
+install(DIRECTORY
+  launch
+  maps
+  params
+  rviz
+  DESTINATION share/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
