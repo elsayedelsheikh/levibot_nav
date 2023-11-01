@@ -14,7 +14,7 @@ find_package(slam_toolbox REQUIRED)
 ## install directories
 install(DIRECTORY
   launch
-  behavior_tree
+  behavior_trees
   maps
   params
   rviz
